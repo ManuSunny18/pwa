@@ -1,0 +1,234 @@
+.MainHome{
+    width: 100%;
+}
+.containerBlock{
+    max-width: 1024px;
+    margin: 0 auto;
+}
+.bannerSec{
+    background: #9350ff;
+    width: 100%;
+    height: 350px;
+    padding: 144px 5% 3px;
+    position: relative;
+}
+.bannerSec::before{
+    content: " ";
+    display: block;
+    height: 191px;
+    top: 70%;
+    position: absolute;
+    background: #9350ff;
+    width: 100%;
+    left: 0;
+    -webkit-transform: skewY(6deg);
+    transform: skewY(8deg);
+    z-index: -1;
+    
+}
+.col2{
+    float:left;
+    width:50%;
+}
+.bannerImg{
+    display: block;
+    max-width: 100%
+}
+.descSec{
+    position: relative;
+    display: block;
+    padding: 0;
+    .container{
+        position: relative;
+        width:90%;
+        box-shadow: 0px 2px 24px rgba(0,0,0,.5);
+    }
+    .btmAligner{
+        display: block;
+        width: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        color: #FFFFFF;
+        padding: 12px;
+        right: 0;
+    }
+    h1{
+        font-size: 30px;
+        font-weight: 300;
+        line-height: 1.13;
+        text-align: left;
+        margin: 0;
+        color:rgb(255, 255, 255);
+    }
+    p{
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 1.25;
+    }
+}
+.advBlock{
+    width:100%;
+    display: table;
+    table-layout: fixed;
+    padding: 200px 0 50px 0px;
+    .col3{
+        display: block;
+        text-align: center;
+        width: 33.3%;
+        float: left;
+        
+        img{
+            display: block;
+            max-width: 88px;
+            margin: auto;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+        }
+        p{
+            font-size: 18px;
+            font-weight: 300;
+            letter-spacing: 0.3px;
+            text-align: center;
+            color: #333333;
+            width: 220px;
+            margin: 0 auto;
+            margin-top: 18px;
+        }
+
+    }
+    .circle{
+        background: #FFFFFF;
+        border-radius: 50%;
+        overflow: hidden;
+        width: 180px;
+        height: 180px;
+        margin: 0 auto;
+        position: relative;
+    }
+}
+.showCase{
+    width: 100%;
+    display: table;
+    padding: 20px 5%;
+    background: #FFFFFF;
+    padding-bottom: 100px;
+    >*{
+        display: block;
+        width: 16.66%;
+        padding: 0 6px;
+        float: left;
+        img{
+            height: 50px;
+            display: block;
+            max-width: 100%;
+            margin: 0 auto;
+
+        }
+    }
+}
+.abtCust{
+    width: 100%;
+    text-align: center;
+    padding: 50px 0;
+    background: #FFFFFF;
+    >h3{
+        font-size: 32px;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+        text-align: center;
+        color: #333333;
+        margin-bottom: 16px;
+    }
+    p{
+        font-size: 20px;
+        font-weight: 300;
+        line-height: 1.35;
+        letter-spacing: 0.3px;
+        text-align: center;
+        color: #333333;
+        margin: 3px;
+    }
+}
+.demoCont{
+    width:100%;
+    background-image:url('./footerbg.png');
+    background-size:cover;
+    background-color: #FFFFFF;
+    display: table;
+}
+.whiteCard{
+    width: 80%;
+    margin: 80px auto 50px auto;
+    background: #FFFFFF;
+    border-radius: 5px;
+    max-width: 740px;
+    text-align: center;
+    padding: 18px 70px;
+    h3{
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.25;
+        letter-spacing: 0.3px;
+        text-align: center;
+        color: #333333;
+    }
+    button{
+        width:auto;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .bannerSec{
+        height:auto;
+        display: table;
+        padding: 100px 5% 0px;
+        .col2{
+            width:100%
+        }
+    }
+    .bannerSec:before{
+        display: table;
+        height: 191px;
+        bottom: -30px;
+        top: auto;
+    }
+    .descSec{
+        .container{
+            position: relative;
+            width:100%;
+            padding: 0;
+        }
+        h1{
+            font-size: 28px;
+        }
+    }
+    .advBlock{
+        display: block;
+        padding: 50px 0;
+        .col3{
+            display: block;
+            width: 100%;
+            margin-top: 50px;
+        }
+    }
+    .showCase{
+        padding-bottom: 0px;
+        > * {
+            display: block;
+            width: 33.3%;
+            padding: 12px 6px;
+            img {
+                height: 38px;
+            }
+        }
+    }
+    .demoCont{
+        .whiteCard{
+            padding: 18px 12px !important;
+        }
+    }
+    
+  }

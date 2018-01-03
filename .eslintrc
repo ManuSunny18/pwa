@@ -1,0 +1,12 @@
+{
+  "extends": "./core/.eslintrc",
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "quotes": [
+      "error",
+      "double"
+    ]
+  }
+}

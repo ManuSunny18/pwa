@@ -1,0 +1,149 @@
+.nav {
+    display: table;
+    width: 100%;
+    padding: 15px 5%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 50;
+    background: #9350ff;
+    .leftSec{
+      float: left;
+      width: 10%;
+    }
+    .rightSec{
+      float: right;
+      width:65%;
+    }
+  }
+  
+  .logo{
+    color:#5cdb9e;
+    text-decoration: none;
+    font-weight:500;
+    padding: 12px;
+    display: block;
+    font-size: 23px;
+    span{
+      color: #FFFFFF
+    }
+  }
+  
+  .link {
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    color: #dedede;
+    text-decoration: none;
+    padding:12px;
+    float:right;
+  }
+  
+  .activeLink {
+    composes: link;
+    pointer-events: none;
+    text-decoration: none;
+  }
+  .borderBtn{
+    border: solid 1px #FFFFFF;
+    color: #FFFFFF;
+    text-decoration: none;
+    border-radius: 5%;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    float: right;
+    position: relative;
+    top: 3px;
+  }
+  .menuBtn{
+    display: none;
+  }
+  .containerBlock{
+    max-width: 1024px;
+    display: block;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  @media only screen and (max-width: 800px) {
+    .rightSec{
+      display: none;
+    }
+    .leftSec{
+      width:100% !important;
+    }
+    .logo{
+      float: left;
+    }
+    .menuBtn {
+      display: block;
+      float: right;
+      position: relative;
+      width: 44px;
+      height: 28.66666667px;
+      cursor: pointer;
+      padding: 0;
+      background: transparent;
+      border-color:transparent;
+    }
+    .menuBtn span,
+    .menuBtn span:before,
+    .menuBtn span:after {
+      -webkit-transition: 0.3s;
+      -moz-transition: 0.3s;
+      -o-transition: 0.3s;
+      transition: 0.3s;
+      transition: all 0.3s ease-in-out;
+      -webkit-transition: all 0.3s ease-in-out;
+      -moz-transition: all 0.3s ease-in-out;
+      -o-transition: all 0.3s ease-in-out;
+      -ms-transition: all 0.3s ease-in-out;
+      background-color: #FFFFFF;
+      width: 44px;
+      height: 2px;
+    }
+    .menuBtn span {
+      position: relative;
+      display: inline-block;
+      float: left;
+      margin-top: 13.33333333px;
+    }
+    .menuBtn span:before,
+    .menuBtn span:after {
+      content: "";
+      position: absolute;
+      left: 0;
+    }
+    .menuBtn span:before {
+      top: -13.33333333px;
+    }
+    .menuBtn span:after {
+      top: 13.33333333px;
+    }
+    /* Ninja Button */
+    .menuBtn.active span {
+      background-color: transparent;
+    }
+    .menuBtn.active span:before,
+    .menuBtn.active span:after {
+      top: 0;
+    }
+    .menuBtn.active span:before {
+      transform: rotate(-135deg);
+      -webkit-transform: rotate(-135deg);
+      -moz-transform: rotate(-135deg);
+      -o-transform: rotate(-135deg);
+      -ms-transform: rotate(-135deg);
+    }
+    .menuBtn.active span:after {
+      transform: rotate(135deg);
+      -webkit-transform: rotate(135deg);
+      -moz-transform: rotate(135deg);
+      -o-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+    }
+    /* Ninja Button Active */
+    
+    
+  }
