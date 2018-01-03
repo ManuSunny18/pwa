@@ -3,7 +3,7 @@
 import React, { Component } from 'react'
 import * as style from'./businessDetails.scss';
 //import { Field, reduxForm } from 'redux-form'
-import TextField from '../TextField/TextField'
+import TextField from '../textField/textField'
 import PrimaryBtn from '../buttons/primaryButton'
 import NavLink from "react-pwa/src/components/link";
 
